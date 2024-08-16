@@ -1,0 +1,193 @@
+body {
+  font-family:  Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img.d-inline-block.align-text-top {
+  width: 7vw;
+}
+.ms-auto {
+  gap: 2rem;
+  font-size: larger;
+}
+
+.footer {
+  background-color: rgb(1, 1, 22);
+  color: white;
+  padding: 40px 0;
+}
+
+.footer h5 {
+  font-size: 2rem;
+}
+
+.footer li {
+  font-size: 14px;
+}
+
+.footer a {
+  color: #ccc;
+}
+
+.footer a:hover {
+  color: white;
+}
+
+.footer .social-icons {
+  margin-top: 20px;
+}
+
+.footer .social-icons a {
+  margin: 0 10px;
+  color: #ccc;
+  font-size: 1.5rem;
+}
+
+.footer .social-icons a:hover {
+  color: white;
+}
+
+footer .copy {
+  width: 100%;
+  text-align: center;
+  color: whitesmoke;
+}
+
+/* -----------------------------------------------------2nd Page----------------------------------------------------------- */
+.col img {
+  width: 62%;
+  height: 59vh;
+}
+
+.card img {
+  height: 35vh;
+}
+
+.hero-text-1 h1 {
+  padding: 49px;
+  color: black;
+  font-size: 4rem;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.card {
+  margin-bottom: 40px;
+}
+.cards.d-flex.justify-content-lg-center.gap-4.text-center.flex-wrap {
+  display: flex;
+  justify-content: center;
+}
+/* ----------------------------------------------------4th-page--------------------------------------------------------------- */
+div#accordionPanelsStayOpenExample {
+  display: grid;
+  justify-content: center;
+  margin-bottom: 42px;
+}
+
+.accordion-item {
+  width: 60vw;
+  align-items: center;
+}
+.accordion-body{
+  font-size: 17px;
+}
+.accordion h1 {
+  font-family: serif;
+  font-size: 8rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.accordion p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  margin-top: 25px;
+}
+
+.accordion-header h2 {
+  font-size: 2rem;
+}
+strong{
+  font-weight: bold;
+  font-size: x-large;
+}
+.trip-header {
+  background: rgba(0, 0, 0, 0.4) url(images/t-img.png) no-repeat center center;
+  background-size: cover;
+  background-blend-mode: darken;
+  color: #fff;
+  padding: 113px 0;
+}
+.trip-header h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+/* --------------------------------------------------------3rd page------------------------------------------------------ */
+
+.about-header {
+  background: rgba(0, 0, 0, 0.4) url(images/d-img.webp) no-repeat center center;
+  background-size: cover;
+  background-blend-mode: darken;
+  color: #fff;
+  padding: 113px 0;
+}
+
+.about-header h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+section.destination-section {
+  padding: 50px;
+}
+.col-md-4{
+  transition: transform 0.5s ease, opacity 0.5s ease; 
+  
+}
+.col-md-4:hover{
+  transform: translateY(-9px);
+  opacity: 0.9;
+}
+.card{
+  transition: transform 0.5s ease, opacity 0.5s ease; 
+  
+}
+.card:hover{
+  transform: translateY(-10px);
+  opacity: 0.9;
+}
+@media (max-width: 500px){
+  .form-control-1 {
+    display: none;
+  }
+
+  .btn {
+    display: none;
+  }
+  img.d-inline-block.align-text-top{
+    width: 25vw;
+  }
+}
+@media (max-width: 800px) {
+  img.d-inline-block.align-text-top{
+    width: 22vw;
+  }
+}
+@media (max-width: 900px) {
+  img.d-inline-block.align-text-top{
+    width: 14vw;
+  }
+}
+
+
+/* ------------------------------------------------4th page------------------------------- */
+.faq-header {
+  background: rgba(0, 0, 0, 0.4) url('images/ques2.jpg') no-repeat center center;
+  background-size: cover;
+  background-blend-mode: darken;
+  color: #fff;
+  padding: 150px 0;
+}

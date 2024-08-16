@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plannydrive-My Trip</title>
+  <!-- <link rel="stylesheet" href="index.html"> -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" id="navi" href="#">
+        <img src="images/usa1l.png" class="d-inline-block align-text-top" alt="Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <form class="d-flex mt-3 mt-lg-0" id="search" role="search">
+          <input class="form-control-1 me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="dest.html">Destination</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="My trip.html">My Trips</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="FAQ.html">FAQ</a>
+          </li>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              English
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Tamil</a></li>
+              <li><a class="dropdown-item" href="#">Urdu</a></li>
+              <li><a class="dropdown-item" href="#">Korean</a></li>
+            </ul>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- dest Header -->
+  <header class="trip-header text-center">
+    <div class="container">
+        <h1>My Trips</h1>
+        <p>Your ultimate travel companion for exploring the United States.</p>
+    </div>
+</header>
+  <!-- trips -->
+  <div class="hero-1">
+    <div class="hero-text-1 d-flex justify-content-lg-center">
+      <h1>Create your first Trip</h1>
+    </div>
+    <div class="cards d-flex justify-content-lg-center gap-4 text-center flex-wrap">
+      <div class="card" style="width: 30rem;">
+        <img
+          src="images/ti-1.jpg"
+          class="card-img-top" alt="Times Square">
+        <div class="card-body">
+          <h2>Golden Gate Bridge</h2>
+          <p class="card-text"> it was the tallest and longest suspension bridge in the world. The Golden Gate Bridge
+            came to be recognized as a symbol of the power and progress of the United States, and it set a precedent for
+            suspension-bridge design around the world.</p>
+        </div>
+      </div>
+      <div class="card" style="width: 30rem;">
+        <img src="images/ti-2.webp"
+          class="card-img-top" alt="New York">
+        <div class="card-body">
+          <h2>Statue Of Liberty</h2>
+          <p class="card-text">New York, often called New York City[b] or NYC, is the most populous city in the United
+            States. Located at the southern tip of New York State on one of the world's largest natural harbors, the
+            city comprises five boroughs, each coextensive with a respective county.</p>
+        </div>
+      </div>
+      <div class="card" style="width: 30rem;">
+        <img src="images/ti-3.webp" class="card-img-top" alt="Orlando">
+        <div class="card-body">
+          <h2>Walt Disney World</h2>
+          <p class="card-text">The Walt Disney World Resort is an entertainment resort complex located about 20 miles
+            southwest of Orlando, Florida, United States. Opened on October 1, 1971, the resort is operated by Disney
+            Experiences, a division of The Walt Disney Company.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <p>Powered by</p>
+          <h5>About Us</h5>
+          <p>Learn more about our story, mission, and values.</p>
+        </div>
+        <div class="col-md-3">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Resources</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Travel Guides</a></li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Follow Us</h5>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copy">
+      <hr>
+      <p>&copy All right reserved.designed by Ayesha Nida </p>
+    </div>
+  </footer>
+  
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"
+  integrity="sha512-M4Wni5hSE1J/cv7gfEDZwro3SgMB6ImWifzGuhXTwD8yUqX5kgBOMPhz4p30P7gqYPWv6hdN5H/KlpuZtKF1UA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- scroll -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"
+  integrity="sha512-KQitVsT6mL2J7G20QGmROPrL9H3DQZ24RC9X7+PKO/xGZQ5bgwEFdK9Q7qMFc17R/XE5GbrRCZ8YXhHkHC3/tw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+  integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+
+
+</html>

@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plannydrive-Visit USA</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap" rel="stylesheet"> -->
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet"> -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+<style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .ms-auto {
+    gap: 2rem;
+    font-size: larger;
+  }
+
+  .nav-item li {
+    color: black;
+  }
+
+
+
+  .hero {
+    position: relative;
+    background: rgba(1, 11, 73, 0.5) url(images/img.1.webp) no-repeat center center;
+    background-size: cover;
+    background-blend-mode: darken;
+    height: 100vh;
+  }
+
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: white;
+  }
+
+  .hero-text h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 56px;
+  }
+
+  .hero-text h4 {
+    margin-top: 20px;
+  }
+
+  .form-container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin-top: 20px;
+  }
+
+  .trending-cities a {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background: transparent;
+    color: #e1e3e3;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  /* .carousel-control-prev-icon{
+  background-color: black;
+  padding: 12px;
+  border-radius: 50%;
+  
+  
+}
+.carousel-control-next-icon {
+  background-color: black;
+  padding: 12px;
+  border-radius: 50%;
+  
+} */
+  #prev-icon-2 {
+    background-color: black;
+    padding: 12px;
+    border-radius: 50%;
+    /* position: relative;
+  top: -17rem;
+  right: -82rem; */
+  }
+
+  #next-icon-2 {
+    background-color: black;
+    padding: 12px;
+    border-radius: 50%;
+    /* position: relative;
+  top: -17rem;
+  right: 9rem; */
+  }
+
+  /* .carousel1-control-prev-icon{
+  background-color: #000;
+  padding: 10px;
+  border-radius: 50%;
+  position: relative;
+    right: -74rem;
+  top: -36rem;
+}
+.carousel2-control-next-icon {
+  background-color: #000;
+  padding: 10px;
+  border-radius: 50%;
+} */
+
+  .carousel-item img {
+    width: 100%;
+    height: 259px;
+    padding: 10px;
+
+  }
+
+  .carousel-item {
+    transition: transform 0.5s ease;
+  }
+
+  .text-center {
+    font-size: 18px;
+
+  }
+
+  .carousel-item h5 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .carousel-item p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  /* .col-md-4{
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.col-md-4:hover{
+  transform: scale(1.1);
+} */
+
+  .carousel {
+    padding: 60px;
+  }
+
+
+  .container h1 {
+    text-align: center;
+    font-size: 5em;
+  }
+
+  .city-card {
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .city-card img {
+    width: 100%;
+    height: 379px;
+    object-fit: cover;
+    border-radius: 31px;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+
+  }
+
+  .city-card img:hover {
+    transform: scale(1.1);
+    opacity: 0.7;
+  }
+
+  .city-card .city-name {
+    position: absolute;
+    bottom: 25px;
+    left: 10px;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.8);
+  }
+
+  .hero-section {
+    background-image: url(images/F-1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+    text-align: center;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    /* Optional: for a darker overlay */
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .search-bar {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .search-bar input {
+    border-radius: 30px 0 0 30px;
+    border: none;
+    padding: 10px 20px;
+  }
+
+  .search-bar button {
+    border-radius: 0 30px 30px 0;
+    border: none;
+    padding: 10px 20px;
+  }
+
+  form.form-inline {
+    display: flex;
+  }
+
+  .how-it-works {
+    padding: 60px 0;
+    text-align: center;
+  }
+
+  .how-it-works h2 {
+    margin-bottom: 40px;
+  }
+
+  .how-it-works p {
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .how-it-works .icon {
+    max-width: 150px;
+    margin: 0 auto 20px;
+    height: 120px;
+  }
+
+  .how-it-works .step {
+    margin-bottom: 40px;
+  }
+
+  .img-fluid {
+    max-width: 100%;
+    height: 120px;
+  }
+
+  .footer {
+    background-color: rgb(1, 1, 22);
+    color: white;
+    padding: 40px 0;
+  }
+
+  .footer h5 {
+    font-size: 2rem;
+  }
+
+  .footer li {
+    font-size: 14px;
+  }
+
+  .footer a {
+    color: #ccc;
+  }
+
+  .footer a:hover {
+    color: white;
+  }
+
+  .footer .social-icons {
+    margin-top: 20px;
+  }
+
+  .footer .social-icons a {
+    margin: 0 10px;
+    color: #ccc;
+    font-size: 1.5rem;
+  }
+
+  .footer .social-icons a:hover {
+    color: white;
+  }
+
+  footer .copy {
+    width: 100%;
+    text-align: center;
+    color: whitesmoke;
+  }
+
+  img.d-inline-block.align-text-top {
+    width: 7vw;
+  }
+
+  @media (max-width: 600px) {
+    .container h1 {
+      font-size: 2em;
+    }
+
+    .form-container {
+      max-width: 425px;
+    }
+  }
+
+  @media (max-width: 413px) {
+    .hero-text h1 {
+      font-size: 40px;
+    }
+  }
+
+  @media (max-width: 300px) {
+    .hero-text h1 {
+      font-size: 30px;
+    }
+
+    nav .navbar-brand img {
+      width: 26vw;
+    }
+  }
+
+  @media (max-width: 500px) {
+
+    #prev-icon-2,
+    #next-icon-2 {
+      display: none;
+    }
+
+    .form-control-1 {
+      display: none;
+    }
+
+    .btn {
+      display: none;
+    }
+
+    img.d-inline-block.align-text-top {
+      width: 25vw;
+    }
+
+    .form-container {
+      max-width: 322px;
+    }
+  }
+
+  @media (max-width: 800px) {
+    img.d-inline-block.align-text-top {
+      width: 22vw;
+    }
+  }
+
+  @media (max-width: 900px) {
+    img.d-inline-block.align-text-top {
+      width: 14vw;
+    }
+  }
+
+  .navbar-light .navbar-toggler {
+    border-color: rgba(0, 0, 0, 0.1);
+  }
+</style>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" id="navi" href="#">
+        <img src="images/usa1l.png" class="d-inline-block align-text-top" alt="Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <form class="d-flex mt-3 mt-lg-0" id="search" role="search">
+          <input class="form-control-1 me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="dest.html">Destination</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="My trip.html">My Trips</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="FAQ.html">FAQ</a>
+          </li>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              English
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Tamil</a></li>
+              <li><a class="dropdown-item" href="#">Urdu</a></li>
+              <li><a class="dropdown-item" href="#">Korean</a></li>
+            </ul>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <div class="hero-text">
+      <h1>Plan your next dream trip to the USA in seconds.</h1>
+      <h4>Trending cities</h4>
+      <div class="trending-cities">
+        <a href="#" class="btn btn-primary">Los Angeles</a>
+        <a href="#" class="btn btn-primary">New York</a>
+        <a href="#" class="btn btn-primary">Miami</a>
+        <a href="#" class="btn btn-primary">San Francisco</a>
+        <a href="#" class="btn btn-primary">Las Vegas</a>
+        <a href="#" class="btn btn-primary">Chicago</a>
+        <a href="#" class="btn btn-primary">Orlando</a>
+        <a href="#" class="btn btn-primary">Boston</a>
+      </div>
+      <div class="form-container ml-4">
+        <form>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Enter destination (city)">
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Add Dates">
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Guests: 2 Adults">
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Guests: 0 Children">
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Plan my trip</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <h1 class="text-center">Find Amazing Trip Inspirations</h1>
+    <p class="text-center">Explore the most popular trips by travelers</p>
+
+    <div id="cardSlider" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row d-flex flex-nowrap">
+            <div class="col-md-6 col-lg-4 col-sm-12">
+              <div class="card">
+
+                <div class="card-body">
+                  <a href="#"><img class="card-img-top"
+                      src="images/img-1.jpg"
+                      alt="New York"></a>
+                  <h5 class="card-title"> New York</h5>
+                  <p class="card-text">New York is a global center of finance and commerce, culture and technology,
+                    entertainment and media.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-sm-12">
+              <div class="card">
+                <a href="#"><img class="card-img-top"
+                    src="images/img-2.jpg"
+                    alt="Trip"></a>
+                <div class="card-body">
+                  <h5 class="card-title">Chicago</h5>
+                  <p class="card-text">Chicago has a very well-known culture.Chicago is also known for architecture.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-sm-12">
+              <div class="card">
+                <img class="card-img-top"
+                  src="images/img-3.jfif"
+                  alt="Another trip">
+                <div class="card-body">
+                  <h5 class="card-title">Yellowstone National Park</h5>
+                  <p class="card-text">Yellowstone has the most active, diverse, and intact collections of combined
+                    geothermal features.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row d-flex flex-nowrap">
+            <div class="col-md-6 col-lg-4 col-sm-12">
+              <div class="card">
+                <a href="#"><img class="card-img-top"
+                    src="images/img-4.jfif"
+                    alt="Another trip"></a>
+                <div class="card-body">
+                  <h5 class="card-title">Miama</h5>
+                  <p class="card-text">Miami is known for its stunning beaches, vibrant nightlife, and beautiful
+                    skyline
+                    views.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-sm-12">
+              <div class="card">
+                <a href="#"><img class="card-img-top"
+                    src="images/img-5.jpg"
+                    alt="Another trip"></a>
+                <div class="card-body">
+                  <h5 class="card-title">San Francisco</h5>
+                  <p class="card-text">San Francisco is famous for its Golden Gate Bridge, steep streets, Alcatraz,
+                    and
+                    – you got it, dude! – Full House. .</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-sm-12">
+              <div class="card">
+                <a href="#"></a><img class="card-img-top"
+                  src="images/img-6.webp"
+                  alt="Another trip"></a>
+                <div class="card-body">
+                  <h5 class="card-title"> San Diego</h5>
+                  <p class="card-text">San Diego is known for its mild year-round Mediterranean climate, extensive
+                    beaches and parks.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <a class="carousel1-control-prev" href="#cardSlider" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">PREVIOUS</span>
+      </a>
+      <a class="carousel2-control-next" href="#cardSlider" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">NEXT</span>
+      </a> -->
+    </div>
+  </div>
+  <div class="container">
+    <h1>TRENDING DESTINATION</h1>
+  </div>
+  <div id="cityCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="container">
+          <div class="row d-flex flex-nowrap">
+            <div class="col-md-4 col-lg-3 col-sm-8">
+              <div class="city-card">
+                <img
+                  src="images/IMG-1.webp"
+                  alt="New York">
+                <div class="city-name">NEW YORK</div>
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-3 col-sm-8">
+              <div class="city-card">
+                <a href="#"><img src="images/imgs-2.jpg"
+                    alt="San Francisco"></a>
+                <div class="city-name">SAN FRANCISCO</div>
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-3 col-sm-8">
+              <div class="city-card">
+                <a href="#"><img
+                    src="images/imgs-3.webp"
+                    alt="Miami"></a>
+                <div class="city-name">MIAMI</div>
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-3 col-sm-8">
+              <div class="city-card">
+                <a href="#"><img
+                    src="images/imgs-4.jpg"
+                    alt="Boston"></a>
+                <div class="city-name">BOSTON</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+          <div class="row d-flex flex-nowrap">
+            <div class="col-md-4 col-lg-3 col-sm-8">
+              <div class="city-card">
+                <a href="#"><img
+                    src="images/imgs-5.jpg"
+                    alt="Los Angeles"></a>
+                <div class="city-name">LOS ANGELES</div>
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-3 col-sm-8">
+              <div class="city-card">
+                <a href="#"><img
+                    src="images/imgs-6.jpg"
+                    alt="Las Vegas"></a>
+                <div class="city-name">LAS VEGAS</div>
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-3 col-sm-8">
+              <div class="city-card">
+                <a href="#"><img src="images/imgs-7.jpg"
+                    alt="Chicago"></a>
+                <div class="city-name">CHICAGO</div>
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-3 col-sm-8">
+              <div class="city-card">
+                <a href="#"><img src="images/imgs-8.jpg" alt="Washington"></a>
+                <div class="city-name">WASHINGTON</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#cityCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" id="prev-icon-2" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#cityCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" id="next-icon-2" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <div class="hero-section">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>FIND YOUR NEXT DESTINATION</h1>
+      <div class="search-bar">
+        <form class="form-inline">
+          <input class="form-control" type="search" placeholder="Search places" aria-label="Search">
+          <button class="btn btn-primary" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="how-it-works">
+    <div class="container">
+      <h2>HOW IT WORKS</h2>
+      <div class="row">
+        <div class="col-md-4 step">
+          <img src="images/step_1.webp" alt="Step 1" class="icon img-fluid">
+          <h3>Make detailed travel plans in seconds</h3>
+          <p>Create a unique, full day by day itinerary based on your preferences.</p>
+        </div>
+        <div class="col-md-4 step">
+          <img src="images/step_2.webp" alt="Step 2" class="icon img-fluid">
+          <h3>Make it awesome</h3>
+          <p>Explore states, cities, and activities. Refine your trip in one click.</p>
+        </div>
+        <div class="col-md-4 step">
+          <img src="images/step_3.webp" alt="Step 3" class="icon img-fluid">
+          <h3>Share it and navigate on the go</h3>
+          <p>Everything in one place. Everyone on the same page.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <p>POWERED BY</p>
+          <h5>About Us</h5>
+          <p>Learn more about our story, mission, and values.</p>
+        </div>
+        <div class="col-md-3">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Resources</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Travel Guides</a></li>
+            <li><a href="#">Help Centre</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Follow Us</h5>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copy">
+      <hr>
+      <p>&copy All Reserved. Designed by AYESHA NIDA </p>
+    </div>
+  </footer>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"
+  integrity="sha512-M4Wni5hSE1J/cv7gfEDZwro3SgMB6ImWifzGuhXTwD8yUqX5kgBOMPhz4p30P7gqYPWv6hdN5H/KlpuZtKF1UA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- scroll -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"
+  integrity="sha512-KQitVsT6mL2J7G20QGmROPrL9H3DQZ24RC9X7+PKO/xGZQ5bgwEFdK9Q7qMFc17R/XE5GbrRCZ8YXhHkHC3/tw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+  integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+
+
+
+</html>
