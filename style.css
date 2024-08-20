@@ -175,6 +175,13 @@ section.destination-section {
   img.d-inline-block.align-text-top{
     width: 22vw;
   }
+  .form-control-1 {
+    display: none;
+  }
+
+  .btn {
+    display: none;
+  }
 }
 @media (max-width: 900px) {
   img.d-inline-block.align-text-top{
