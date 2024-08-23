@@ -1,5 +1,5 @@
-body {
-  font-family:  Arial, Helvetica, sans-serif;
+* {
+  font-family: "Playfair Display", serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -61,7 +61,7 @@ footer .copy {
 }
 
 .card img {
-  height: 35vh;
+  height: 227px;
 }
 
 .hero-text-1 h1 {
@@ -84,6 +84,7 @@ div#accordionPanelsStayOpenExample {
   display: grid;
   justify-content: center;
   margin-bottom: 42px;
+  margin-top: 40px;
 }
 
 .accordion-item {
@@ -93,12 +94,7 @@ div#accordionPanelsStayOpenExample {
 .accordion-body{
   font-size: 17px;
 }
-.accordion h1 {
-  font-family: serif;
-  font-size: 8rem;
-  font-weight: bold;
-  text-align: center;
-}
+
 
 .accordion p {
   text-align: center;
@@ -197,4 +193,12 @@ section.destination-section {
   background-blend-mode: darken;
   color: #fff;
   padding: 150px 0;
+  height: 0vh;
+}
+#header h1{
+  font-family: serif;
+  font-size: 56px;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
 }
