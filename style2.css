@@ -21,6 +21,10 @@
   outline: none; /* Remove the focus outline */
   border-radius: 15px;
 }
+.custom-navbar {
+    /* Add box shadow */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
 
 
 .hero {

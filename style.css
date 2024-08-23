@@ -65,6 +65,11 @@ footer .copy {
   border-radius: 15px;
 }
 
+.custom-navbar {
+  /* Add box shadow */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
 
 /* -----------------------------------------------------2nd Page----------------------------------------------------------- */
 .col img {
