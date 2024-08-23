@@ -14,6 +14,13 @@
     color: black;
 }
 
+.nav-link:focus,
+.nav-link.active {
+  color: #fff; /* Active link text color */
+  background-color: #7db6f370; /* Active link background color */
+  outline: none; /* Remove the focus outline */
+  border-radius: 15px;
+}
 
 
 .hero {

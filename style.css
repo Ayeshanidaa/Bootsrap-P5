@@ -12,6 +12,10 @@ img.d-inline-block.align-text-top {
   font-size: larger;
 }
 
+
+
+
+
 .footer {
   background-color: rgb(1, 1, 22);
   color: white;
@@ -53,6 +57,14 @@ footer .copy {
   text-align: center;
   color: whitesmoke;
 }
+.nav-link:focus,
+.nav-link.active {
+  color: #fff; /* Active link text color */
+  background-color: #7db6f370; /* Active link background color */
+  outline: none; /* Remove the focus outline */
+  border-radius: 15px;
+}
+
 
 /* -----------------------------------------------------2nd Page----------------------------------------------------------- */
 .col img {
