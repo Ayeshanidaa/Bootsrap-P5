@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Itinerary</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+</head>
+<style>
+    /* Custom Styles */
+body {
+    background-color: #f4f4f4;
+}
+
+.timeline-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+}
+
+.card .rating span {
+    font-size: 0.9em;
+}
+
+</style>
+<body>
+    <div class="container mt-5">
+        <!-- Date and Location -->
+        <div class="row align-items-center mb-4">
+            <div class="col-auto">
+                <span class="badge bg-warning text-white py-2 px-3">Wed, 25 Sep</span>
+            </div>
+            <div class="col">
+                <span class="text-muted">New York, NY, USA</span>
+            </div>
+        </div>
+
+        <!-- Timeline Item -->
+        <div class="row mb-5">
+            <div class="col-12 col-md-2 text-center">
+                <div class="d-flex flex-column align-items-center">
+                    <div class="timeline-icon bg-dark rounded-circle mb-2"></div>
+                    <div class="distance text-muted">11.8 mi, 33 mins drive</div>
+                </div>
+            </div>
+            <div class="col-12 col-md-10">
+                <div class="card shadow-sm">
+                    <div class="row g-0">
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Morning | 2-3 hours</h5>
+                                <h3>Bronx Zoo</h3>
+                                <div class="rating">
+                                    <span>4.6</span> <span class="text-warning">★★★★★</span> <span class="text-muted">(35555)</span>
+                                </div>
+                                <p class="card-text text-muted">2300 Southern Blvd, Bronx, NY 10460, USA</p>
+                                <p class="card-text">Metropolitan zoo with 265 acres that harbors 10,000 animals in replicas of their native habitats.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="bronx-zoo.jpg" class="img-fluid rounded-end" alt="Bronx Zoo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Repeat similar blocks for other timeline items -->
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
