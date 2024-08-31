@@ -16,13 +16,13 @@
 
 .nav-link:focus,
 .nav-link.active {
-  color: #fff; /* Active link text color */
-  background-color: #7db6f370; /* Active link background color */
-  outline: none; /* Remove the focus outline */
+  color: #fff; 
+  background-color: #7db6f370;
+  outline: none; 
   border-radius: 15px;
 }
 .custom-navbar {
-    /* Add box shadow */
+    
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   }
 
@@ -57,6 +57,22 @@
     border-radius: 10px;
     max-width: 500px;
     margin-top: 20px;
+}
+/* -------------- */
+.card1 img.card-img-top {
+    height: 232px;
+}
+.card1{
+    border: 2px solid #ccc;
+}
+
+.card-body:hover {
+    color: #041a6d; /* Changes text color to orange-red */
+    transition: color 0.3s ease;
+}
+
+.mt-5{
+    margin-bottom: 29px;
 }
 
 .trending-cities a {
