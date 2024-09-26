@@ -5,12 +5,16 @@
   box-sizing: border-box;
 }
 
+h1 {
+  font-size: clamp(2.5rem, 2.5vw, 4rem);
+}
+
 img.d-inline-block.align-text-top {
   width: 7vw;
 }
 
 .ms-auto {
-  gap: 2rem;
+  gap: 0rem;
   font-size: larger;
 }
 
@@ -63,16 +67,16 @@ footer .copy {
 .nav-link:focus,
 .nav-link.active {
   color: #fff;
-  /* Active link text color */
   background-color: #7db6f370;
-  /* Active link background color */
   outline: none;
-  /* Remove the focus outline */
   border-radius: 15px;
 }
 
+a.nav-link.active {
+  width: fit-content;
+}
+
 .custom-navbar {
-  /* Add box shadow */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
@@ -89,9 +93,9 @@ footer .copy {
 }
 
 .hero-text-1 h1 {
-  padding: 49px;
+  margin: auto;
+  padding: 38px;
   color: black;
-  font-size: 4rem;
   text-align: center;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -114,7 +118,7 @@ div#accordionPanelsStayOpenExample {
 }
 
 .accordion-item {
-  width: 60vw;
+  width: 90vw;
   align-items: center;
 }
 
@@ -148,7 +152,7 @@ strong {
 }
 
 .trip-header h1 {
-  font-size: 48px;
+  /* font-size: 48px; */
   font-weight: bold;
 }
 
@@ -163,7 +167,7 @@ strong {
 }
 
 .about-header h1 {
-  font-size: 48px;
+  /* font-size: 48px; */
   font-weight: bold;
 }
 
@@ -238,7 +242,7 @@ section.destination-section {
 
 #header h1 {
   font-family: serif;
-  font-size: 56px;
+  /* font-size: 56px; */
   font-weight: bold;
   text-align: center;
   align-items: center;
@@ -489,9 +493,11 @@ body {
   height: 20px;
   color: white;
 }
-.col-md-4{
+
+.col-md-4 {
   overflow: hidden;
 }
+
 .col-md-4 img {
   transition: 3s ease-in;
 

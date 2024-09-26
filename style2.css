@@ -5,8 +5,12 @@
     font-family: "Playfair Display", serif;
 }
 
+h1 {
+    font-size: clamp(2.5rem, 2.5vw, 4rem);
+}
+
 .ms-auto {
-    gap: 2rem;
+    gap: 0rem;
     font-size: larger;
 }
 
@@ -16,15 +20,20 @@
 
 .nav-link:focus,
 .nav-link.active {
-  color: #fff; 
-  background-color: #7db6f370;
-  outline: none; 
-  border-radius: 15px;
+    color: #fff;
+    background-color: #7db6f370;
+    outline: none;
+    border-radius: 15px;
 }
+
+a.nav-link.active {
+    width: fit-content;
+}
+
 .custom-navbar {
-    
+
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  }
+}
 
 
 .hero {
@@ -43,9 +52,9 @@
     color: white;
 }
 
-.hero-text h1 {
+/* .hero-text h1 {
     font-size: 56px;
-}
+} */
 
 .hero-text h4 {
     margin-top: 20px;
@@ -58,20 +67,27 @@
     max-width: 500px;
     margin-top: 20px;
 }
+
 /* -------------- */
 .card1 img.card-img-top {
     height: 232px;
 }
-.card1{
+
+.card1 {
     border: 2px solid #ccc;
 }
 
+.card1 .card-body {
+    padding: 12px;
+}
+
 .card-body:hover {
-    color: #041a6d; /* Changes text color to orange-red */
+    color: #041a6d;
+    /* Changes text color to orange-red */
     transition: color 0.3s ease;
 }
 
-.mt-5{
+.mt-5 {
     margin-bottom: 29px;
 }
 
@@ -143,7 +159,7 @@
 
 .container h1 {
     text-align: center;
-    font-size: 56px;
+    /* font-size: 56px; */
 }
 
 .city-card {
@@ -154,7 +170,6 @@
 
 .city-card img {
     width: 100%;
-    height: 379px;
     object-fit: cover;
     border-radius: 31px;
     transition: transform 0.5s ease, opacity 0.5s ease;
@@ -167,9 +182,6 @@
 }
 
 .city-card .city-name {
-    /* position: absolute;
-    bottom: 25px;
-    left: 10px; */
     color: black;
     text-align: center;
     font-size: 23px;
@@ -190,7 +202,7 @@
 .hero-text-1 h1 {
     padding: 49px;
     color: black;
-    font-size: 4rem;
+    /* font-size: 4rem; */
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -198,7 +210,7 @@
 .card {
     margin-top: 20px;
     margin-bottom: 40px;
-    
+
 }
 
 .cards.d-flex.justify-content-lg-center.gap-4.text-center.flex-wrap {
@@ -237,8 +249,10 @@
 }
 
 .hero-content h1 {
-    font-size: 56px;
+    /* font-size: 56px; */
+
     margin-bottom: 1rem;
+    padding: 12px;
 }
 
 .search-bar {
@@ -268,7 +282,7 @@ form.form-inline {
 }
 
 .how-it-works h1 {
-    font-size: 56px;
+    /* font-size: 56px; */
     margin-bottom: 40px;
 }
 
@@ -339,24 +353,18 @@ img.d-inline-block.align-text-top {
 }
 
 @media (max-width: 600px) {
-    .container h1 {
-        font-size: 2em;
-    }
 
     .form-container {
         max-width: 425px;
     }
 }
-
-@media (max-width: 413px) {
-    .hero-text h1 {
-        font-size: 40px;
-    }
-}
-
 @media (max-width: 300px) {
-    .hero-text h1 {
+
+    /* .hero-text h1 {
         font-size: 30px;
+    } */
+    .form-container {
+        max-width: 254px;
     }
 
     nav .navbar-brand img {
@@ -384,7 +392,7 @@ img.d-inline-block.align-text-top {
     }
 
     .form-container {
-        max-width: 322px;
+        max-width: 296px;
     }
 }
 
@@ -397,6 +405,13 @@ img.d-inline-block.align-text-top {
 @media (max-width: 900px) {
     img.d-inline-block.align-text-top {
         width: 14vw;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .city-card img {
+        height: 299px;
     }
 }
 
